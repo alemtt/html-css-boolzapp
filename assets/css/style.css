@@ -4,7 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    
+    border: 1px dashed black;
 }
 
 /*#endregion common*/
@@ -13,12 +13,42 @@
 
 /*#region debug*/
 .debug {
-    border: 1px dashed black;
+    
 }
+
+.debug .site-main{
+    height: 200px;
+}
+
+.debug .col-30{
+    background-color: aqua;
+}
+
+.debug .col-70{
+   background-color: greenyellow; 
+}
+
+
+
 /*#endregion debug*/
 
 
 
 /*#region utility*/
+
+.site-main{
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+
+}
+
+.col-30{
+    width: 30%;
+}
+
+.col-70{
+    width: 70%;
+}
 
 /*#endregion utility*/
