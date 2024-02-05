@@ -7,6 +7,17 @@
     border: 1px dashed black;
 }
 
+:root{
+    --blz-chat: #eaeaeaFF;
+    --blz-lighter: #ffffffFF;
+    --blz-bgup: #009688FF;
+    --blz-bgdown: #dcdbd3FF;
+    --blz-text: #d5f9baFF;
+    --blz-dark: #111a1eFF;
+    --blz-news: #8edafcFF;
+    --blz-grey: #b2b6bbFF;
+}
+
 /*#endregion common*/
 
 
@@ -17,7 +28,7 @@
 }
 
 .debug .site-main{
-    height: 200px;
+    height: 800px;
 }
 
 .debug .col-30{
@@ -28,6 +39,26 @@
    background-color: greenyellow; 
 }
 
+.debug .news{
+    background-color: var(--blz-news);
+    height: 5rem;
+}
+
+
+.debug .search-bar{
+    height: 5rem;
+    background-color: lightcoral;
+}
+
+.debug .chat{
+    background-color: seagreen;
+    height: 5rem;
+}
+
+.debug .content-text{
+    height: 10rem;
+    width: 20rem;
+}
 
 
 /*#endregion debug*/
@@ -40,8 +71,24 @@
     max-width: 1200px;
     margin: auto;
     display: flex;
-
 }
+
+.container{
+    padding: 4rem;
+    position: relative;
+}
+
+.content-text{
+    width: 10rem; 
+    background-color: var(--blz-lighter);
+}
+
+
+.right{
+    position: absolute;
+    right: 4rem;
+}
+
 
 .col-30{
     width: 30%;
@@ -49,6 +96,25 @@
 
 .col-70{
     width: 70%;
+}
+
+.site-header{
+    height: 10vh;
+    background-color: var(--blz-chat);
+}
+
+.chat-box{
+    height: 60vh;
+    overflow: scroll;
+}
+
+.text-box{
+    height: 10vh;
+    background-color: var(--blz-chat);
+}
+
+.container{
+    height: 82vh;
 }
 
 /*#endregion utility*/
